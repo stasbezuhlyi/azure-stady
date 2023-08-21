@@ -1,4 +1,4 @@
-#Stages -> Jobs -> Steps -> Sasks
+#Stages -> Jobs -> Steps -> Tasks
 stages:
   - stage: build
     jobs:
