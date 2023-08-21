@@ -12,5 +12,5 @@ stages:
       - job: test
         steps:
           - script: echo "Start test"
-          - script: delay 10
+          - script: sleep 10
       - job: postest
