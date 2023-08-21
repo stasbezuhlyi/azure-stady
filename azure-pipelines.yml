@@ -10,3 +10,7 @@ stages:
   - stage: test
     jobs:
       - job: test
+        steps:
+          - script: echo "Start test"
+          - script: delay 10
+      - job: postest
