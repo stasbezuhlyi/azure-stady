@@ -2,7 +2,7 @@
 stages:
   - stage: preparing
     jobs:
-      - job: install Docker
+      - job: install_Docker
         steps:
           - script: echo "-------------------install Docker-----------------"
           - task: DockerInstaller@0
