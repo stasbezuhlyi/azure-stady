@@ -1,5 +1,16 @@
 #Stages -> Jobs -> Steps -> Tasks
 stages:
+  - stage: preparing
+    jobs:
+      - job: install Docker
+        steps:
+          step:
+            - script: echo "-------------------install Docker-----------------"
+            - task: DockerInstaller@0
+              inputs:
+                dockerVersion: '17.09.0-ce'
+                releaseType: 'stable'
+            - script: docker --version
   - stage: build
     jobs:
       - job: getlatest
