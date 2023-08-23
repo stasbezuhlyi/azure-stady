@@ -29,8 +29,6 @@ stages:
       - job: create_artifact
         steps:
           - script: zip artifact testfile.txt
-      - job: upload_atifact
-        steps:
           - task: S3Upload@1
             inputs:
               awsCredentials: 'aws_s3_access'
