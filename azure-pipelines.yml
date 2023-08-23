@@ -35,6 +35,6 @@ stages:
               regionName: 'eu-central-1'
               bucketName: 'azure-devops-s3'
               globExpressions: 'artifact.zip'
-              targetFolder: '/artifacts'
+              targetFolder: '\artifacts'
               keyManagement: 'awsManaged'
               encryptionAlgorithm: 'AES256'
