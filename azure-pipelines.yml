@@ -24,3 +24,8 @@ stages:
           - script: echo "Start test"
           - script: sleep 10
       - job: postest
+  - stage: artifact
+    jobs:
+      - job: create_artifact
+        steps:
+          - script: zip artifact testfile.txt
