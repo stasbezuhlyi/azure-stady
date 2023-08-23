@@ -34,6 +34,7 @@ stages:
               awsCredentials: 'aws_s3_access'
               regionName: 'eu-central-1'
               bucketName: 'azure-devops-s3'
+              createBucket: true
               globExpressions: 'artifact.zip'
               targetFolder: 'artifacts'
               keyManagement: 'awsManaged'
