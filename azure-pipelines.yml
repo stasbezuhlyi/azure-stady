@@ -16,6 +16,7 @@ stages:
         steps:
           - script: echo "Hello!"
           - script: echo "Hello2!"
+          - script: pwd
       - job: build
   - stage: test
     jobs:
